@@ -1,10 +1,14 @@
 <html>
-<head></head>
+<head>
+  <script type="text/javascript" src="js/lib/jquery.js"></script>
+  <script type="text/javascript" src="js/viewfinite/viewfinite.js"></script>
+</head>
 <body>
 <form>
-  Username<input></br>
-  Password<input type="password"></br></br>
-  <input type="submit" value="Login"></input>
+  Username<input id="username"></br>
+  Password<input id="password" type="password"></br></br>
+  <input type="submit" value="Login" onclick="login(document.getElementById('username').value, document.getElementById('password').value)"></input>
 </form>
+<div id="results"></div>
 </body>
 </html>
