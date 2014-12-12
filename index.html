@@ -1,13 +1,16 @@
 <html>
 <head>
   <script type="text/javascript" src="js/lib/jquery.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.xmlrpc.js"></script>
   <script type="text/javascript" src="js/viewfinite/viewfinite.js"></script>
 </head>
 <body>
 <form>
-  Username<input id="username"></br>
+  First name<input id="firstname"></br>
+  Last name<input id="lastname"></br>
   Password<input id="password" type="password"></br></br>
-  <input type="submit" value="Login" onclick="login(document.getElementById('username').value, document.getElementById('password').value)"></input>
+  <!-- <input type="submit" value="Login" onclick="login(document.getElementById('firstname').value, document.getElementById('lastname').value, document.getElementById('password').value)"></input> -->
+  <input type="button" value="Login" onclick="login(document.getElementById('firstname').value, document.getElementById('lastname').value, document.getElementById('password').value)"></input>
 </form>
 <div id="results"></div>
 </body>
